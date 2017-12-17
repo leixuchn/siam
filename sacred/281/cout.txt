@@ -1,0 +1,70 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "281"
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+INFO - root - preproces -- None
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+inputs Tensor("batch:0", shape=(8, 127, 127, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc/pool1/MaxPool:0", shape=(8, 29, 29, 96), dtype=float32)
+net Tensor("siamese_fc/conv4/concat:0", shape=(8, 8, 8, 384), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 384, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 18, 8, 8), dtype=float32)
+inputs Tensor("batch:1", shape=(8, 239, 239, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc_1/pool1/MaxPool:0", shape=(8, 57, 57, 96), dtype=float32)
+net Tensor("siamese_fc_1/conv4/concat:0", shape=(8, 22, 22, 384), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 384, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 18, 22, 22), dtype=float32)
+Tensor("detection/add:0", shape=(8, 15, 15), dtype=float32)
+inputs Tensor("batch_1:0", shape=(8, 127, 127, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc_2/pool1/MaxPool:0", shape=(8, 29, 29, 96), dtype=float32)
+net Tensor("siamese_fc_2/conv4/concat:0", shape=(8, 8, 8, 384), dtype=float32)
+Tensor("siamese_fc_2/conv5/def/transpose:0", shape=(8, 384, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_2/conv5/def/transpose_1:0", shape=(8, 18, 8, 8), dtype=float32)
+inputs Tensor("batch_1:1", shape=(8, 239, 239, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc_3/pool1/MaxPool:0", shape=(8, 57, 57, 96), dtype=float32)
+net Tensor("siamese_fc_3/conv4/concat:0", shape=(8, 22, 22, 384), dtype=float32)
+Tensor("siamese_fc_3/conv5/def/transpose:0", shape=(8, 384, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_3/conv5/def/transpose_1:0", shape=(8, 18, 22, 22), dtype=float32)
+Tensor("detection_1/add:0", shape=(8, 15, 15), dtype=float32)
+INFO - root - Model moving average is disabled since decay factor is 0
+2017-12-15 09:15:27.046907: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 09:15:27.046949: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 09:15:27.046955: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 09:15:27.046960: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 09:15:27.046964: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 09:15:27.991681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 5791:00:00.0
+Total memory: 11.17GiB
+Free memory: 11.10GiB
+2017-12-15 09:15:27.991717: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-15 09:15:27.991724: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-15 09:15:27.991736: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 5791:00:00.0)
+INFO:tensorflow:Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-clip-0.01-0.01/model.ckpt-140000
+INFO - tensorflow - Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-clip-0.01-0.01/model.ckpt-140000
+INFO - root - Starting threads 0 ...
+
+INFO - root - Starting threads 0 ...
+
+INFO - root - training for 332500 steps
+INFO - root - 2017-12-15 09:15:34.510211: step 0, loss = 0.47, batch loss = 0.23 (1.7 examples/sec; 4.820 sec/batch; 445h:10m:06s remains)
+2017-12-15 09:15:35.292617: I tensorflow/core/kernels/logging_ops.cc:79] [[[-6.7335496 -6.578794 -6.953083 -7.8338227 -7.8896303 -6.4701915 -5.4156966 -5.1335597 -5.0602145 -4.9739032 -4.5543818 -4.1122708 -3.5839791 -2.1772027 -0.55794144][-7.0918565 -6.0606828 -6.841713 -8.14311 -8.3324509 -6.6671886 -5.2692204 -4.7575774 -4.6682949 -4.8337331 -4.7053814 -4.2581992 -3.6608839 -2.0764351 -0.28379977][-6.1185627 -4.915062 -6.0813122 -7.6761131 -7.8764367 -5.9566665 -4.1985412 -3.4861767 -3.5411341 -4.2811694 -4.7939496 -4.6349759 -4.1589479 -2.6079125 -0.85343122][-4.6884718 -3.2801411 -4.7422895 -6.4982648 -6.6283908 -4.514257 -2.5837955 -1.8479519 -2.2566009 -3.7480631 -5.13009 -5.4869094 -5.220232 -3.7726741 -2.1479816][-2.7791903 -0.94705653 -2.5254645 -4.342525 -4.5006242 -2.2887435 -0.3449651 0.39388 -0.43477178 -2.7314484 -5.0019855 -5.979454 -6.0757804 -4.9108663 -3.5985155][-1.2896421 0.68224585 -0.611866 -2.052098 -1.8798085 0.55976117 2.5666146 3.2436867 1.8676056 -1.3387966 -4.4454021 -6.0681171 -6.6008172 -5.8217287 -4.8329391][-0.588112 1.5219346 0.80235016 0.064380765 0.84055865 3.5582719 5.6047678 6.1086731 4.16926 0.25456059 -3.4537544 -5.5266519 -6.3003559 -5.7210145 -4.8698325][-1.4244744 1.1913487 1.2442797 1.392608 2.7453208 5.6660867 7.7226887 8.1964769 6.1153355 2.0378985 -1.8399253 -4.1179061 -5.1064386 -4.846137 -4.3058238][-3.4358771 -0.48480594 0.17074907 1.0074264 2.6313033 5.3932767 7.2959032 7.7996798 5.9882712 2.3076725 -1.1984854 -3.2415946 -4.1384258 -3.990869 -3.631526][-5.7102213 -2.7130601 -1.7940471 -0.6834563 0.8249799 3.0934262 4.6186247 5.0388246 3.607924 0.66394532 -2.0973871 -3.5588152 -4.0021377 -3.6726751 -3.3051152][-7.9146323 -5.10822 -4.184608 -3.1071792 -1.9825289 -0.3138423 0.6947633 0.90506732 -0.18101311 -2.4048843 -4.3539615 -5.1238375 -5.053575 -4.524425 -4.2203712][-9.8094282 -7.2351456 -6.3976769 -5.4626622 -4.7255282 -3.6112576 -3.0402393 -3.0449011 -3.8420758 -5.4207668 -6.6379309 -6.8498712 -6.4366651 -5.8088312 -5.5743847][-11.086903 -8.6309509 -7.8350415 -7.015059 -6.5287652 -5.7963572 -5.482338 -5.6199594 -6.2476873 -7.3457613 -8.0310564 -7.9380789 -7.4116359 -6.7422543 -6.3678937][-11.048233 -8.7452145 -8.1872826 -7.72592 -7.6202726 -7.23313 -7.0765629 -7.1958389 -7.5979762 -8.2352991 -8.4397058 -8.141675 -7.6174459 -6.9087172 -6.3462739][-9.4279938 -7.2899885 -7.1186538 -7.120194 -7.408133 -7.3177638 -7.2177424 -7.1593184 -7.239346 -7.4286489 -7.3110166 -7.0242825 -6.7254868 -6.1707706 -5.5729418]]...]
+INFO:tensorflow:/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-clip-0.01-0.01-val/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - tensorflow - /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-clip-0.01-0.01-val/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-clip-0.01-0.01-val
+INFO - root - 2017-12-15 09:15:43.050032: step 10, loss = 0.76, batch loss = 0.33 (12.3 examples/sec; 0.651 sec/batch; 60h:05m:55s remains)
+INFO - root - 2017-12-15 09:15:49.399450: step 20, loss = 0.59, batch loss = 0.29 (12.9 examples/sec; 0.621 sec/batch; 57h:23m:01s remains)
+INFO - root - 2017-12-15 09:15:55.736958: step 30, loss = 0.78, batch loss = 0.32 (12.8 examples/sec; 0.623 sec/batch; 57h:33m:22s remains)
+INFO - root - 2017-12-15 09:16:02.156290: step 40, loss = 0.61, batch loss = 0.33 (12.1 examples/sec; 0.659 sec/batch; 60h:49m:06s remains)
+INFO - root - 2017-12-15 09:16:08.560868: step 50, loss = 0.88, batch loss = 0.31 (12.7 examples/sec; 0.632 sec/batch; 58h:23m:13s remains)
+INFO - root - 2017-12-15 09:16:14.935311: step 60, loss = 0.83, batch loss = 0.50 (12.7 examples/sec; 0.629 sec/batch; 58h:03m:15s remains)
+INFO - root - 2017-12-15 09:16:21.366698: step 70, loss = 0.67, batch loss = 0.32 (12.4 examples/sec; 0.643 sec/batch; 59h:21m:58s remains)
+INFO - root - 2017-12-15 09:16:27.752950: step 80, loss = 0.72, batch loss = 0.37 (12.6 examples/sec; 0.632 sec/batch; 58h:24m:14s remains)
+INFO - root - 2017-12-15 09:16:34.113196: step 90, loss = 0.77, batch loss = 0.31 (12.7 examples/sec; 0.628 sec/batch; 57h:58m:06s remains)
+INFO - root - 2017-12-15 09:16:40.539683: step 100, loss = 0.65, batch loss = 0.35 (12.3 examples/sec; 0.651 sec/batch; 60h:08m:07s remains)
+2017-12-15 09:16:41.061759: I tensorflow/core/kernels/logging_ops.cc:79] [[[-1.4311342 -3.4889264 -4.6939125 -5.493145 -4.8843622 -3.2655036 -1.9386691 -1.3796656 -1.6845437 -2.4276338 -3.1008639 -3.1777775 -2.6698833 -1.7306001 -1.4301492][-1.07705 -2.5234401 -3.7608476 -5.0682969 -5.068882 -3.8250246 -2.4152222 -1.6388032 -1.7227345 -2.4780674 -3.3275456 -3.5031946 -2.9163985 -1.7115663 -1.0494576][-0.54728675 -1.0878081 -2.3178773 -4.2163439 -5.0325956 -4.3884554 -3.1295106 -2.2349768 -2.2089875 -2.9944963 -3.9076142 -4.001615 -3.1439881 -1.6165085 -0.56539273][0.16174769 0.53885937 -0.54220355 -2.8473005 -4.4072771 -4.4547505 -3.5498207 -2.6897583 -2.6046953 -3.3155196 -4.174623 -4.1237259 -2.9692936 -1.1742311 0.14503121][0.47288513 1.4802091 0.57799339 -1.8026657 -3.7247367 -4.0837574 -3.2598543 -2.2541065 -2.0757148 -2.7990592 -3.7954926 -3.7964115 -2.4979572 -0.5175494 1.0221548][0.35676074 1.5946896 0.99228024 -1.0728247 -2.7754154 -2.8499 -1.6864376 -0.36313295 -0.19667125 -1.239044 -2.6941481 -3.0269184 -1.7629616 0.35690045 2.0647519][0.091253042 1.1691697 0.82162166 -0.75545549 -1.7694166 -1.0172752 0.93619657 2.8027098 3.0318558 1.5196543 -0.65132511 -1.7386526 -1.0732957 0.60152483 2.0078738][-0.62563848 0.27503872 0.087533951 -0.91765666 -1.0552135 0.69577789 3.6077216 6.1719446 6.6205759 4.6813173 1.6890695 -0.50463593 -0.99105191 -0.2874409 0.48475885][-1.4759834 -0.79449332 -0.91111171 -1.4949627 -1.0560166 1.182791 4.4700623 7.3667583 8.0296135 6.0003719 2.6419718 -0.24989045 -1.6032445 -1.7250227 -1.4631236][-2.991375 -2.5399284 -2.6199446 -2.9805741 -2.3795772 -0.27445102 2.7174432 5.491086 6.3726406 4.8157692 1.8533759 -1.0519245 -2.7338312 -3.3290484 -3.3469148][-4.9374852 -4.6084809 -4.6469393 -4.927968 -4.4668179 -2.9314177 -0.74121 1.4675355 2.4103768 1.5434909 -0.58407211 -2.8899283 -4.3071322 -4.8938966 -4.9557753][-6.5972471 -6.4179239 -6.533658 -6.8928671 -6.7368259 -5.9059157 -4.6722646 -3.2132454 -2.4032872 -2.6528084 -3.8150358 -5.2422729 -6.0855293 -6.3799009 -6.3160715][-7.6177244 -7.6783161 -7.9478712 -8.3901968 -8.454073 -8.0994587 -7.5093746 -6.6517849 -6.0244055 -5.8801622 -6.2844687 -6.9298611 -7.2315931 -7.239274 -7.0650473][-7.675849 -7.8767853 -8.1927118 -8.5914793 -8.7450142 -8.6657648 -8.4609509 -8.0497942 -7.6664238 -7.4550247 -7.4717445 -7.6182785 -7.59398 -7.45545 -7.2682123][-7.0646439 -7.1969166 -7.4212456 -7.6989517 -7.8885441 -7.9583778 -7.9578514 -7.8312588 -7.6822872 -7.5476627 -7.4627247 -7.4529095 -7.3848906 -7.3050022 -7.2301044]]...]
+INFO - root - 2017-12-15 09:16:47.409829: step 110, loss = 0.73, batch loss = 0.43 (12.7 examples/sec; 0.631 sec/batch; 58h:13m:57s remains)
+2017-12-15 09:16:53.851437: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:247] PoolAllocator: After 56664 get requests, put_count=56655 evicted_count=1000 eviction_rate=0.0176507 and unsatisfied allocation rate=0.0195715
+2017-12-15 09:16:53.851468: I tensorflow/core/common_runtime/gpu/pool_allocator.cc:259] Raising pool_size_limit_ from 100 to 110
+INFO - root - 2017-12-15 09:16:53.854060: step 120, loss = 0.55, batch loss = 0.29 (12.4 examples/sec; 0.648 sec/batch; 59h:47m:07s remains)

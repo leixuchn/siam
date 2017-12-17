@@ -1,0 +1,84 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "58"
+INFO - root - Creating training directory: /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+sdiufhasudf Tensor("siamese_fc/conv5/split:0", shape=(8, 8, 8, 192), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 72, 8, 8), dtype=float32)
+ddd Tensor("siamese_fc/conv5/def/b1/transpose:0", shape=(8, 6, 6, 128), dtype=float32)
+sdiufhasudf Tensor("siamese_fc_1/conv5/split:0", shape=(8, 22, 22, 192), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 72, 22, 22), dtype=float32)
+ddd Tensor("siamese_fc_1/conv5/def/b1/transpose:0", shape=(8, 20, 20, 128), dtype=float32)
+INFO - root - Model moving average is disabled since decay factor is 0
+2017-12-05 07:34:57.093265: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-05 07:34:57.093348: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-05 07:34:57.093375: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-05 07:34:57.093398: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-05 07:34:57.093420: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-05 07:34:57.653854: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 5791:00:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+2017-12-05 07:34:57.653920: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-05 07:34:57.653949: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-05 07:34:57.653977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 5791:00:00.0)
+INFO:tensorflow:Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-only/model.ckpt-150000
+INFO - tensorflow - Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-only/model.ckpt-150000
+INFO - root - Starting threads 0 ...
+
+INFO - root - training for 332500 steps
+INFO - root - 2017-12-05 07:35:01.342346: step 0, loss = 0.66, batch loss = 0.59 (3.1 examples/sec; 2.613 sec/batch; 241h:18m:20s remains)
+INFO:tensorflow:/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - tensorflow - /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - root - 2017-12-05 07:35:04.137069: step 10, loss = 0.82, batch loss = 0.75 (43.0 examples/sec; 0.186 sec/batch; 17h:10m:09s remains)
+INFO - root - 2017-12-05 07:35:06.150436: step 20, loss = 0.85, batch loss = 0.78 (40.7 examples/sec; 0.196 sec/batch; 18h:08m:36s remains)
+INFO - root - 2017-12-05 07:35:08.200526: step 30, loss = 0.66, batch loss = 0.59 (42.4 examples/sec; 0.189 sec/batch; 17h:26m:11s remains)
+INFO - root - 2017-12-05 07:35:10.283498: step 40, loss = 0.63, batch loss = 0.56 (42.7 examples/sec; 0.187 sec/batch; 17h:17m:35s remains)
+INFO - root - 2017-12-05 07:35:12.233072: step 50, loss = 0.56, batch loss = 0.49 (39.0 examples/sec; 0.205 sec/batch; 18h:57m:59s remains)
+INFO - root - 2017-12-05 07:35:14.154459: step 60, loss = 0.49, batch loss = 0.42 (43.3 examples/sec; 0.185 sec/batch; 17h:04m:05s remains)
+INFO - root - 2017-12-05 07:35:16.094815: step 70, loss = 0.50, batch loss = 0.43 (42.0 examples/sec; 0.191 sec/batch; 17h:35m:38s remains)
+INFO - root - 2017-12-05 07:35:18.067865: step 80, loss = 0.70, batch loss = 0.63 (40.3 examples/sec; 0.199 sec/batch; 18h:20m:00s remains)
+INFO - root - 2017-12-05 07:35:20.008550: step 90, loss = 0.33, batch loss = 0.26 (41.7 examples/sec; 0.192 sec/batch; 17h:42m:11s remains)
+INFO - root - 2017-12-05 07:35:21.952603: step 100, loss = 0.41, batch loss = 0.34 (42.8 examples/sec; 0.187 sec/batch; 17h:15m:50s remains)
+INFO - root - 2017-12-05 07:35:23.978075: step 110, loss = 0.48, batch loss = 0.41 (42.3 examples/sec; 0.189 sec/batch; 17h:28m:11s remains)
+INFO - root - 2017-12-05 07:35:25.899815: step 120, loss = 0.38, batch loss = 0.31 (41.9 examples/sec; 0.191 sec/batch; 17h:38m:14s remains)
+INFO - root - 2017-12-05 07:35:27.832535: step 130, loss = 0.43, batch loss = 0.36 (41.2 examples/sec; 0.194 sec/batch; 17h:56m:50s remains)
+INFO - root - 2017-12-05 07:35:29.756720: step 140, loss = 0.45, batch loss = 0.38 (40.9 examples/sec; 0.196 sec/batch; 18h:03m:43s remains)
+INFO - root - 2017-12-05 07:35:31.681439: step 150, loss = 0.34, batch loss = 0.27 (41.7 examples/sec; 0.192 sec/batch; 17h:43m:16s remains)
+INFO - root - 2017-12-05 07:35:33.598238: step 160, loss = 0.43, batch loss = 0.36 (41.8 examples/sec; 0.191 sec/batch; 17h:40m:42s remains)
+INFO - root - 2017-12-05 07:35:35.544686: step 170, loss = 0.30, batch loss = 0.23 (40.0 examples/sec; 0.200 sec/batch; 18h:27m:15s remains)
+INFO - root - 2017-12-05 07:35:37.480113: step 180, loss = 0.26, batch loss = 0.19 (40.4 examples/sec; 0.198 sec/batch; 18h:15m:26s remains)
+INFO - root - 2017-12-05 07:35:39.419742: step 190, loss = 0.32, batch loss = 0.25 (41.5 examples/sec; 0.193 sec/batch; 17h:46m:38s remains)
+INFO - root - 2017-12-05 07:35:41.354689: step 200, loss = 0.26, batch loss = 0.19 (40.8 examples/sec; 0.196 sec/batch; 18h:04m:54s remains)
+INFO - root - 2017-12-05 07:35:43.342433: step 210, loss = 0.43, batch loss = 0.36 (40.0 examples/sec; 0.200 sec/batch; 18h:28m:59s remains)
+INFO - root - 2017-12-05 07:35:45.294142: step 220, loss = 0.32, batch loss = 0.25 (40.8 examples/sec; 0.196 sec/batch; 18h:07m:05s remains)
+INFO - root - 2017-12-05 07:35:47.229681: step 230, loss = 0.29, batch loss = 0.22 (40.3 examples/sec; 0.199 sec/batch; 18h:19m:21s remains)
+INFO - root - 2017-12-05 07:35:49.190928: step 240, loss = 0.49, batch loss = 0.42 (40.4 examples/sec; 0.198 sec/batch; 18h:17m:32s remains)
+INFO - root - 2017-12-05 07:35:51.123201: step 250, loss = 0.35, batch loss = 0.28 (40.8 examples/sec; 0.196 sec/batch; 18h:04m:40s remains)
+INFO - root - 2017-12-05 07:35:53.057999: step 260, loss = 0.52, batch loss = 0.45 (41.1 examples/sec; 0.195 sec/batch; 17h:57m:33s remains)
+INFO - root - 2017-12-05 07:35:55.017588: step 270, loss = 0.37, batch loss = 0.30 (40.6 examples/sec; 0.197 sec/batch; 18h:10m:50s remains)
+INFO - root - 2017-12-05 07:35:56.966042: step 280, loss = 0.43, batch loss = 0.36 (41.3 examples/sec; 0.194 sec/batch; 17h:51m:25s remains)
+INFO - root - 2017-12-05 07:35:58.909734: step 290, loss = 0.31, batch loss = 0.24 (41.6 examples/sec; 0.192 sec/batch; 17h:44m:56s remains)
+INFO - root - 2017-12-05 07:36:00.848136: step 300, loss = 0.37, batch loss = 0.30 (42.3 examples/sec; 0.189 sec/batch; 17h:27m:24s remains)
+INFO - root - 2017-12-05 07:36:02.838835: step 310, loss = 0.32, batch loss = 0.25 (40.6 examples/sec; 0.197 sec/batch; 18h:11m:03s remains)
+INFO - root - 2017-12-05 07:36:04.773077: step 320, loss = 0.47, batch loss = 0.40 (42.7 examples/sec; 0.188 sec/batch; 17h:18m:13s remains)
+INFO - root - 2017-12-05 07:36:06.711030: step 330, loss = 0.43, batch loss = 0.36 (40.3 examples/sec; 0.198 sec/batch; 18h:18m:14s remains)
+INFO - root - 2017-12-05 07:36:08.642267: step 340, loss = 0.35, batch loss = 0.28 (40.6 examples/sec; 0.197 sec/batch; 18h:10m:22s remains)
+INFO - root - 2017-12-05 07:36:10.563139: step 350, loss = 0.42, batch loss = 0.35 (43.1 examples/sec; 0.186 sec/batch; 17h:08m:03s remains)
+INFO - root - 2017-12-05 07:36:12.516782: step 360, loss = 0.31, batch loss = 0.24 (40.1 examples/sec; 0.199 sec/batch; 18h:23m:30s remains)
+INFO - root - 2017-12-05 07:36:14.450500: step 370, loss = 0.40, batch loss = 0.33 (40.3 examples/sec; 0.198 sec/batch; 18h:17m:33s remains)
+INFO - root - 2017-12-05 07:36:16.393572: step 380, loss = 0.51, batch loss = 0.44 (39.4 examples/sec; 0.203 sec/batch; 18h:43m:31s remains)
+INFO - root - 2017-12-05 07:36:18.318661: step 390, loss = 0.36, batch loss = 0.29 (41.4 examples/sec; 0.193 sec/batch; 17h:50m:14s remains)
+INFO - root - 2017-12-05 07:36:20.230899: step 400, loss = 0.37, batch loss = 0.30 (42.4 examples/sec; 0.189 sec/batch; 17h:23m:29s remains)
+INFO - root - 2017-12-05 07:36:22.260226: step 410, loss = 0.29, batch loss = 0.22 (41.1 examples/sec; 0.195 sec/batch; 17h:58m:31s remains)
+INFO - root - 2017-12-05 07:36:24.222984: step 420, loss = 0.47, batch loss = 0.40 (38.8 examples/sec; 0.206 sec/batch; 19h:02m:02s remains)
+INFO - root - 2017-12-05 07:36:26.171995: step 430, loss = 0.39, batch loss = 0.32 (40.8 examples/sec; 0.196 sec/batch; 18h:04m:17s remains)
+INFO - root - 2017-12-05 07:36:28.101282: step 440, loss = 0.36, batch loss = 0.29 (39.9 examples/sec; 0.201 sec/batch; 18h:30m:02s remains)
+INFO - root - 2017-12-05 07:36:30.045759: step 450, loss = 0.37, batch loss = 0.30 (39.9 examples/sec; 0.201 sec/batch; 18h:30m:36s remains)
+INFO - root - 2017-12-05 07:36:31.988791: step 460, loss = 0.28, batch loss = 0.21 (41.1 examples/sec; 0.194 sec/batch; 17h:55m:59s remains)
+INFO - root - 2017-12-05 07:36:33.922507: step 470, loss = 0.34, batch loss = 0.27 (41.4 examples/sec; 0.193 sec/batch; 17h:50m:00s remains)
+INFO - root - 2017-12-05 07:36:35.867138: step 480, loss = 0.39, batch loss = 0.32 (41.0 examples/sec; 0.195 sec/batch; 17h:59m:12s remains)

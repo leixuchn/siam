@@ -1,0 +1,38 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "261"
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+INFO - root - Model moving average is disabled since decay factor is 0
+2017-12-14 09:00:54.625616: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-14 09:00:54.625655: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-14 09:00:54.625662: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-14 09:00:54.625667: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-14 09:00:54.625671: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+inputs Tensor("batch:0", shape=(8, 127, 127, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc/pool1/MaxPool:0", shape=(8, 29, 29, 96), dtype=float32)
+net Tensor("siamese_fc/conv4/concat:0", shape=(8, 8, 8, 384), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 384, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 18, 8, 8), dtype=float32)
+inputs Tensor("batch:1", shape=(8, 239, 239, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc_1/pool1/MaxPool:0", shape=(8, 57, 57, 96), dtype=float32)
+net Tensor("siamese_fc_1/conv4/concat:0", shape=(8, 22, 22, 384), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 384, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 18, 22, 22), dtype=float32)
+Tensor("detection/add:0", shape=(8, 15, 15), dtype=float32)
+2017-12-14 09:00:59.362977: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 5791:00:00.0
+Total memory: 11.17GiB
+Free memory: 8.74GiB
+2017-12-14 09:00:59.363013: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-14 09:00:59.363019: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-14 09:00:59.363031: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 5791:00:00.0)
+INFO:tensorflow:Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-only/model.ckpt-150000
+INFO - tensorflow - Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-only/model.ckpt-150000
+INFO - root - Starting threads 0 ...
+
+INFO - root - training for 332500 steps
+INFO - root - 2017-12-14 09:01:17.041539: step 0, loss = 0.75, batch loss = 0.69 (0.7 examples/sec; 10.954 sec/batch; 1011h:42m:07s remains)
+2017-12-14 09:01:17.803653: I tensorflow/core/kernels/logging_ops.cc:79] [[[8.4124804e-05 7.9628648e-05 7.5813958e-05 7.4463474e-05 8.1137929e-05 9.5479467e-05 0.00011583843 0.00014062348 0.00015413131 0.00015156048 0.00013782381 0.00011707139 9.768059e-05 8.4623069e-05 7.7525685e-05][8.1724218e-05 7.8182988e-05 7.6507968e-05 7.7603196e-05 8.913182e-05 0.00011094954 0.00014368368 0.00018166174 0.00019775057 0.00018956595 0.00016571795 0.00013249338 0.00010365246 8.5694577e-05 7.7218538e-05][8.7587156e-05 8.6281005e-05 8.7676613e-05 9.5799885e-05 0.00012010125 0.00016031587 0.00021743015 0.00027550585 0.00029322374 0.00027173554 0.00022909147 0.00017307812 0.00012481509 9.5948832e-05 8.2064827e-05][0.00010246076 0.00010359314 0.00010717016 0.00012500357 0.00016859766 0.00023817222 0.00032907905 0.00041310262 0.00043071609 0.00038743997 0.00031538017 0.00022642565 0.00015307314 0.00010894735 8.7080021e-05][0.00012318637 0.00012486082 0.00012967316 0.00015852248 0.00022566697 0.00033032108 0.00046270477 0.0005803947 0.00059494918 0.000517164 0.00040328092 0.00027508521 0.00017694512 0.00011782732 8.91627e-05][0.00014598921 0.00014691667 0.00015530062 0.00019843147 0.00029028827 0.00043065305 0.00060769432 0.00076216157 0.0007625593 0.00063545996 0.00047531913 0.00031405597 0.00019784326 0.00012561472 9.1212678e-05][0.00017051316 0.00017216361 0.00018740517 0.00024396993 0.00035231741 0.00051884336 0.00072629331 0.00089938828 0.00086001732 0.00067981635 0.00049113814 0.00031985439 0.00020218035 0.0001263014 9.0554335e-05][0.00019689876 0.00020295632 0.00022660312 0.00028785469 0.0003919689 0.00054924458 0.00073739392 0.00087308092 0.00078390032 0.00059256633 0.00041969682 0.00027522098 0.0001787501 0.00011524839 8.5666317e-05][0.00021938742 0.00023095332 0.00025666 0.00030742012 0.00038467877 0.00049830589 0.00062329107 0.00068915862 0.0005881525 0.00043878279 0.00031452172 0.00021450216 0.00014791259 0.00010195568 8.0394566e-05][0.00023008816 0.00024487454 0.00026787448 0.00030361782 0.00034961785 0.00041297829 0.00047846243 0.00049679977 0.00041455019 0.00031626492 0.00024002674 0.00017899821 0.0001340717 9.7602278e-05 7.9091908e-05][0.00022533735 0.00023976216 0.00025726805 0.00027725051 0.00029983709 0.00033063651 0.00036433025 0.00036543972 0.00030899848 0.00024897547 0.00020662993 0.0001680789 0.00013102326 9.7289441e-05 7.914599e-05][0.00021098122 0.00021771142 0.00022518024 0.00022930055 0.00023657623 0.00025201371 0.00027421626 0.000274714 0.00024330025 0.00021085674 0.00018955505 0.0001595996 0.00012426774 9.2406546e-05 7.6665827e-05][0.00019135972 0.00018611798 0.00018313424 0.00017710826 0.0001769337 0.00018879143 0.00021163658 0.00021951142 0.00020888471 0.0001946386 0.00018449902 0.00015675831 0.00012148297 8.9853296e-05 7.5411743e-05][0.0001734051 0.00015983469 0.00014888908 0.00013975163 0.00013869106 0.00015462788 0.00018653749 0.00020593732 0.00021028852 0.00020580358 0.00019831896 0.00016670984 0.00012714144 9.3310846e-05 7.7297482e-05][0.0001719572 0.00015274569 0.00013646566 0.0001275196 0.00013032512 0.00015435833 0.00019666254 0.00022661027 0.0002378324 0.00023348103 0.00022118895 0.00018194258 0.00013647294 9.9248995e-05 7.9870806e-05]]...]
+/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-clip-0.01-0.01

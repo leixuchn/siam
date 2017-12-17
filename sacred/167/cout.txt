@@ -1,0 +1,37 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "167"
+INFO - root - Creating training directory: /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-momentum-lr0.01-clip-zeroinit-relu-bias
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+INFO - root - Model moving average is disabled since decay factor is 0
+2017-12-09 05:45:11.653375: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-09 05:45:11.653420: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-09 05:45:11.653435: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-09 05:45:11.653440: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-09 05:45:11.653444: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+sdiufhasudf Tensor("siamese_fc/conv5/split:0", shape=(8, 8, 8, 192), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 72, 8, 8), dtype=float32)
+ddd Tensor("siamese_fc/conv5/def/b1/Relu:0", shape=(8, 6, 6, 128), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose_2:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_3:0", shape=(8, 72, 8, 8), dtype=float32)
+sdiufhasudf Tensor("siamese_fc_1/conv5/split:0", shape=(8, 22, 22, 192), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 72, 22, 22), dtype=float32)
+ddd Tensor("siamese_fc_1/conv5/def/b1/Relu:0", shape=(8, 20, 20, 128), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose_2:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_3:0", shape=(8, 72, 22, 22), dtype=float32)
+Tensor("detection/add:0", shape=(8, 15, 15), dtype=float32)
+2017-12-09 05:45:18.048633: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 5791:00:00.0
+Total memory: 11.17GiB
+Free memory: 4.02GiB
+2017-12-09 05:45:18.048667: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-09 05:45:18.048674: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-09 05:45:18.048681: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 5791:00:00.0)
+INFO:tensorflow:Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-only/model.ckpt-150000
+INFO - tensorflow - Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-only/model.ckpt-150000
+INFO - root - Starting threads 0 ...
+
+INFO - root - training for 332500 steps
+[<tf.Variable 'siamese_fc/conv1/weights:0' shape=(11, 11, 3, 96) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv1/BatchNorm/beta:0' shape=(96,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv1/BatchNorm/gamma:0' shape=(96,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv1/BatchNorm/moving_mean:0' shape=(96,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv1/BatchNorm/moving_variance:0' shape=(96,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b1/weights:0' shape=(5, 5, 48, 128) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b1/BatchNorm/beta:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b1/BatchNorm/gamma:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b1/BatchNorm/moving_mean:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b1/BatchNorm/moving_variance:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b2/weights:0' shape=(5, 5, 48, 128) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b2/BatchNorm/beta:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b2/BatchNorm/gamma:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b2/BatchNorm/moving_mean:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv2/b2/BatchNorm/moving_variance:0' shape=(128,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv3/weights:0' shape=(3, 3, 256, 384) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv3/BatchNorm/beta:0' shape=(384,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv3/BatchNorm/gamma:0' shape=(384,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv3/BatchNorm/moving_mean:0' shape=(384,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv3/BatchNorm/moving_variance:0' shape=(384,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b1/weights:0' shape=(3, 3, 192, 192) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b1/BatchNorm/beta:0' shape=(192,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b1/BatchNorm/gamma:0' shape=(192,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b1/BatchNorm/moving_mean:0' shape=(192,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b1/BatchNorm/moving_variance:0' shape=(192,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b2/weights:0' shape=(3, 3, 192, 192) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b2/BatchNorm/beta:0' shape=(192,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b2/BatchNorm/gamma:0' shape=(192,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b2/BatchNorm/moving_mean:0' shape=(192,) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv4/b2/BatchNorm/moving_variance:0' shape=(192,) dtype=float32_ref>, <tf.Variable 'detection/biases:0' shape=(1,) dtype=float32_ref>, <tf.Variable 'global_step:0' shape=() dtype=int32_ref>]

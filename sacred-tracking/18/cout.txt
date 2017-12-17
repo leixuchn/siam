@@ -1,0 +1,2 @@
+INFO - run_tracker_on_OTB - Running command 'main'
+INFO - run_tracker_on_OTB - Started run with ID "18"

@@ -1,0 +1,4 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "97"
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None

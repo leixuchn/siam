@@ -1,0 +1,60 @@
+INFO - Obj-Siam-FC - Running command 'main'
+INFO - Obj-Siam-FC - Started run with ID "18"
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+sdiufhasudf Tensor("siamese_fc/conv5/split:0", shape=(8, 8, 8, 192), dtype=float32)
+sdfah Tensor("siamese_fc/conv5/offset2/BiasAdd:0", shape=(8, 8, 8, 72), dtype=float32)
+Tensor("siamese_fc/conv5/transpose:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/transpose_1:0", shape=(8, 72, 8, 8), dtype=float32)
+ddd Tensor("siamese_fc/conv5/b1/transpose:0", shape=(8, 6, 6, 128), dtype=float32)
+Tensor("siamese_fc/conv5/transpose_2:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/transpose_3:0", shape=(8, 72, 8, 8), dtype=float32)
+sdiufhasudf Tensor("siamese_fc_1/conv5/split:0", shape=(8, 22, 22, 192), dtype=float32)
+sdfah Tensor("siamese_fc_1/conv5/offset2/BiasAdd:0", shape=(8, 22, 22, 72), dtype=float32)
+Tensor("siamese_fc_1/conv5/transpose:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/transpose_1:0", shape=(8, 72, 22, 22), dtype=float32)
+ddd Tensor("siamese_fc_1/conv5/b1/transpose:0", shape=(8, 20, 20, 128), dtype=float32)
+Tensor("siamese_fc_1/conv5/transpose_2:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/transpose_3:0", shape=(8, 72, 22, 22), dtype=float32)
+INFO - root - Model moving average is disabled since decay factor is 0
+2017-12-02 11:40:55.213208: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-02 11:40:55.213358: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-02 11:40:55.213378: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-02 11:40:55.213384: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-02 11:40:55.213388: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-02 11:40:55.854779: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 5791:00:00.0
+Total memory: 11.17GiB
+Free memory: 11.11GiB
+2017-12-02 11:40:55.854819: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-02 11:40:55.854825: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-02 11:40:55.854839: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 5791:00:00.0)
+INFO - root - Starting threads 0 ...
+
+INFO - root - training for 332500 steps
+INFO - root - 2017-12-02 11:40:58.633422: step 0, loss = 0.90, batch loss = 0.69 (3.5 examples/sec; 2.311 sec/batch; 213h:26m:23s remains)
+INFO:tensorflow:/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - tensorflow - /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - root - 2017-12-02 11:41:01.320099: step 10, loss = nan, batch loss = 0.69 (40.1 examples/sec; 0.199 sec/batch; 18h:25m:14s remains)
+INFO - root - 2017-12-02 11:41:03.298596: step 20, loss = nan, batch loss = 0.69 (42.1 examples/sec; 0.190 sec/batch; 17h:34m:01s remains)
+INFO - root - 2017-12-02 11:41:05.277733: step 30, loss = nan, batch loss = 0.69 (40.4 examples/sec; 0.198 sec/batch; 18h:18m:13s remains)
+INFO - root - 2017-12-02 11:41:07.248522: step 40, loss = nan, batch loss = 0.69 (41.0 examples/sec; 0.195 sec/batch; 17h:59m:58s remains)
+INFO - root - 2017-12-02 11:41:09.226095: step 50, loss = nan, batch loss = 0.69 (40.4 examples/sec; 0.198 sec/batch; 18h:17m:10s remains)
+INFO - root - 2017-12-02 11:41:11.195290: step 60, loss = nan, batch loss = 0.69 (40.4 examples/sec; 0.198 sec/batch; 18h:18m:13s remains)
+INFO - root - 2017-12-02 11:41:13.172784: step 70, loss = nan, batch loss = 0.69 (40.4 examples/sec; 0.198 sec/batch; 18h:15m:46s remains)
+INFO - root - 2017-12-02 11:41:15.140101: step 80, loss = nan, batch loss = 0.69 (41.0 examples/sec; 0.195 sec/batch; 18h:02m:19s remains)
+INFO - root - 2017-12-02 11:41:17.109734: step 90, loss = nan, batch loss = 0.69 (40.9 examples/sec; 0.196 sec/batch; 18h:03m:48s remains)
+INFO - root - 2017-12-02 11:41:19.086207: step 100, loss = nan, batch loss = 0.69 (41.0 examples/sec; 0.195 sec/batch; 18h:00m:28s remains)
+INFO - root - 2017-12-02 11:41:21.147634: step 110, loss = nan, batch loss = 0.69 (40.0 examples/sec; 0.200 sec/batch; 18h:26m:49s remains)
+INFO - root - 2017-12-02 11:41:23.127303: step 120, loss = nan, batch loss = 0.69 (40.1 examples/sec; 0.200 sec/batch; 18h:26m:10s remains)
+INFO - root - 2017-12-02 11:41:25.109323: step 130, loss = nan, batch loss = 0.69 (40.1 examples/sec; 0.199 sec/batch; 18h:24m:12s remains)
+INFO - root - 2017-12-02 11:41:27.095829: step 140, loss = nan, batch loss = 0.69 (40.4 examples/sec; 0.198 sec/batch; 18h:17m:54s remains)
+INFO - root - 2017-12-02 11:41:29.064777: step 150, loss = nan, batch loss = 0.69 (40.4 examples/sec; 0.198 sec/batch; 18h:15m:51s remains)
+INFO - root - 2017-12-02 11:41:31.045099: step 160, loss = nan, batch loss = 0.69 (40.5 examples/sec; 0.197 sec/batch; 18h:13m:45s remains)
+INFO - root - 2017-12-02 11:41:33.012101: step 170, loss = nan, batch loss = 0.69 (40.4 examples/sec; 0.198 sec/batch; 18h:16m:05s remains)
+INFO - root - 2017-12-02 11:41:34.989050: step 180, loss = nan, batch loss = 0.69 (40.0 examples/sec; 0.200 sec/batch; 18h:29m:01s remains)
+INFO - root - 2017-12-02 11:41:36.960890: step 190, loss = nan, batch loss = 0.69 (40.4 examples/sec; 0.198 sec/batch; 18h:16m:51s remains)
+INFO - root - 2017-12-02 11:41:38.928567: step 200, loss = nan, batch loss = 0.69 (40.8 examples/sec; 0.196 sec/batch; 18h:06m:05s remains)
+INFO - root - 2017-12-02 11:41:40.976447: step 210, loss = nan, batch loss = 0.69 (40.1 examples/sec; 0.200 sec/batch; 18h:25m:22s remains)
+INFO - root - 2017-12-02 11:41:42.948305: step 220, loss = nan, batch loss = 0.69 (41.2 examples/sec; 0.194 sec/batch; 17h:56m:32s remains)
+INFO - root - 2017-12-02 11:41:44.922441: step 230, loss = nan, batch loss = 0.69 (40.0 examples/sec; 0.200 sec/batch; 18h:26m:59s remains)

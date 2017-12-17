@@ -1,0 +1,16 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "67"
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+sdiufhasudf Tensor("siamese_fc/conv5/split:0", shape=(8, 8, 8, 192), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 72, 8, 8), dtype=float32)
+ddd Tensor("siamese_fc/conv5/def/b1/transpose:0", shape=(8, 6, 6, 128), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose_2:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_3:0", shape=(8, 72, 8, 8), dtype=float32)
+sdiufhasudf Tensor("siamese_fc_1/conv5/split:0", shape=(8, 22, 22, 192), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 72, 22, 22), dtype=float32)
+ddd Tensor("siamese_fc_1/conv5/def/b1/transpose:0", shape=(8, 20, 20, 128), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose_2:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_3:0", shape=(8, 72, 22, 22), dtype=float32)
+Tensor("detection/add:0", shape=(8, 15, 15), dtype=float32)
+INFO - root - Model moving average is disabled since decay factor is 0

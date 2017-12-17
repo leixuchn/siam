@@ -1,0 +1,2 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "120"

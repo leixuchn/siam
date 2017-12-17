@@ -1,0 +1,45 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "157"
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+INFO - root - Model moving average is disabled since decay factor is 0
+2017-12-08 10:19:56.389594: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-08 10:19:56.389630: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-08 10:19:56.389636: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-08 10:19:56.389640: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-08 10:19:56.389644: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-08 10:19:57.333185: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 5791:00:00.0
+Total memory: 11.17GiB
+Free memory: 8.74GiB
+2017-12-08 10:19:57.333220: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-08 10:19:57.333226: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-08 10:19:57.333233: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 5791:00:00.0)
+INFO - root - Starting threads 0 ...
+
+INFO - root - training for 332500 steps
+sdiufhasudf Tensor("siamese_fc/conv5/split:0", shape=(8, 8, 8, 192), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 72, 8, 8), dtype=float32)
+ddd Tensor("siamese_fc/conv5/def/b1/transpose:0", shape=(8, 6, 6, 128), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose_2:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_3:0", shape=(8, 72, 8, 8), dtype=float32)
+sdiufhasudf Tensor("siamese_fc_1/conv5/split:0", shape=(8, 22, 22, 192), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 72, 22, 22), dtype=float32)
+ddd Tensor("siamese_fc_1/conv5/def/b1/transpose:0", shape=(8, 20, 20, 128), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose_2:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_3:0", shape=(8, 72, 22, 22), dtype=float32)
+Tensor("detection/add:0", shape=(8, 15, 15), dtype=float32)
+INFO - root - 2017-12-08 10:20:08.712834: step 0, loss = 0.90, batch loss = 0.69 (0.9 examples/sec; 8.716 sec/batch; 805h:03m:02s remains)
+2017-12-08 10:20:09.324413: I tensorflow/core/kernels/logging_ops.cc:79] [[[0.00030426437 0.00031155752 0.00031240756 0.00031189583 0.0003120249 0.0003126066 0.0003125761 0.00031228471 0.00031193485 0.00031164891 0.0003084263 0.00030598711 0.00030327987 0.00029974064 0.0002964942][0.00031213381 0.00031877263 0.00031918733 0.00031890962 0.00031916311 0.00032107194 0.00032328168 0.00032614073 0.00032766626 0.00032755936 0.00032370386 0.000320844 0.00031676251 0.00031213765 0.00030798127][0.00031073121 0.00031726834 0.00031772503 0.00031873933 0.0003208406 0.00032594681 0.00033397306 0.00034150973 0.00034329435 0.00034215656 0.00033647628 0.00032982748 0.00032283185 0.00031523503 0.00030918993][0.00031147274 0.00031787105 0.00031704083 0.00031895909 0.00032391786 0.00033339608 0.00034787657 0.00036089 0.00036181745 0.00035714437 0.00034895365 0.00033836343 0.00032805791 0.00031750958 0.00031003493][0.00031620238 0.00032108428 0.00031974388 0.00032129363 0.00032739094 0.00034010605 0.00035770121 0.00037496665 0.00037583598 0.00036436183 0.00035310947 0.00034068487 0.00032719402 0.00031530287 0.00030831364][0.00031874311 0.00032449886 0.00032291512 0.00032597277 0.00033259293 0.00034564655 0.00036617776 0.00039413039 0.00039839486 0.00037299321 0.00035530972 0.00033738825 0.00031978273 0.00030960058 0.00030437668][0.00032058556 0.0003272348 0.00032664114 0.00032947096 0.00033667393 0.00034823228 0.00036678783 0.00040493664 0.00040652609 0.00036762626 0.0003456574 0.00032614861 0.00030720577 0.00029950359 0.00029789167][0.00032341684 0.00032883769 0.000326632 0.00032655304 0.00032831819 0.00033010932 0.00033641569 0.00035615897 0.00035153941 0.00032607585 0.00031244653 0.00030338956 0.00029148813 0.00028753883 0.0002898915][0.00031981518 0.0003237206 0.00031820597 0.00031354764 0.00030973885 0.00030510631 0.00030259072 0.00030654413 0.00029968907 0.00028945197 0.00028451576 0.00028164918 0.00027724839 0.00027787418 0.00028415484][0.00030868076 0.00031080117 0.00030510669 0.00029855958 0.00029188959 0.00028439364 0.00028014721 0.00028109521 0.00027973618 0.00027455357 0.00027173362 0.00027211683 0.00026901934 0.00027230711 0.00028122417][0.00028902767 0.0002897754 0.0002846604 0.00027913196 0.00027497436 0.00026917813 0.00026699551 0.00027233083 0.00027292749 0.00027072246 0.00026874221 0.00027023462 0.00026852405 0.00027222221 0.00028118893][0.00026967839 0.00027149246 0.00026844055 0.00026731362 0.00026460449 0.00026017573 0.00026270834 0.00027154826 0.00027423582 0.00027528594 0.00027606194 0.00027565105 0.00027245641 0.00027535393 0.00028295268][0.00026122879 0.00026436395 0.00026255881 0.00026153642 0.00026035265 0.00025960038 0.0002657586 0.00027778983 0.00028250148 0.00028506896 0.00028543588 0.00028329942 0.00027840823 0.00027834033 0.00028461544][0.00026011452 0.00026362677 0.00026202365 0.00026063653 0.00026075164 0.000262156 0.00026964032 0.00028395679 0.00028988902 0.00029200368 0.00029096208 0.00028710524 0.0002816362 0.0002802668 0.00028566216][0.00026452166 0.00026770702 0.00026565802 0.00026482335 0.00026568834 0.00026757465 0.0002753181 0.00028931373 0.00029490271 0.00029531278 0.00029400887 0.00028950494 0.00028357282 0.00028171355 0.00028679078]]...]
+INFO:tensorflow:/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-momentum-lr0.001-notzeroinit-larger-from-scratch/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - tensorflow - /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-momentum-lr0.001-notzeroinit-larger-from-scratch/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - root - 2017-12-08 10:20:13.787328: step 10, loss = nan, batch loss = 0.69 (21.9 examples/sec; 0.366 sec/batch; 33h:47m:53s remains)
+INFO - root - 2017-12-08 10:20:17.387816: step 20, loss = nan, batch loss = 0.69 (21.5 examples/sec; 0.371 sec/batch; 34h:17m:32s remains)
+INFO - root - 2017-12-08 10:20:20.939848: step 30, loss = nan, batch loss = 0.69 (22.1 examples/sec; 0.361 sec/batch; 33h:22m:16s remains)
+INFO - root - 2017-12-08 10:20:24.477933: step 40, loss = nan, batch loss = 0.69 (22.3 examples/sec; 0.359 sec/batch; 33h:07m:18s remains)
+INFO - root - 2017-12-08 10:20:28.144085: step 50, loss = nan, batch loss = 0.69 (20.6 examples/sec; 0.389 sec/batch; 35h:53m:23s remains)
+INFO - root - 2017-12-08 10:20:31.711695: step 60, loss = nan, batch loss = 0.69 (22.9 examples/sec; 0.349 sec/batch; 32h:15m:32s remains)
+INFO - root - 2017-12-08 10:20:35.162878: step 70, loss = nan, batch loss = 0.69 (23.2 examples/sec; 0.344 sec/batch; 31h:48m:27s remains)
+INFO - root - 2017-12-08 10:20:38.706692: step 80, loss = nan, batch loss = 0.69 (22.7 examples/sec; 0.352 sec/batch; 32h:29m:46s remains)

@@ -1,0 +1,83 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "264"
+INFO - root - Creating training directory: /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-clip--10-10-adam
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+INFO - root - Model moving average is disabled since decay factor is 0
+2017-12-14 10:38:03.606067: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-14 10:38:03.606210: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-14 10:38:03.606217: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-14 10:38:03.606221: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-14 10:38:03.606225: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+inputs Tensor("batch:0", shape=(8, 127, 127, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc/pool1/MaxPool:0", shape=(8, 29, 29, 96), dtype=float32)
+net Tensor("siamese_fc/conv4/concat:0", shape=(8, 8, 8, 384), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 384, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 18, 8, 8), dtype=float32)
+inputs Tensor("batch:1", shape=(8, 239, 239, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc_1/pool1/MaxPool:0", shape=(8, 57, 57, 96), dtype=float32)
+net Tensor("siamese_fc_1/conv4/concat:0", shape=(8, 22, 22, 384), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 384, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 18, 22, 22), dtype=float32)
+Tensor("detection/add:0", shape=(8, 15, 15), dtype=float32)
+2017-12-14 10:38:07.771170: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 6bee:00:00.0
+Total memory: 11.17GiB
+Free memory: 8.74GiB
+2017-12-14 10:38:07.771207: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-14 10:38:07.771213: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-14 10:38:07.771221: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 6bee:00:00.0)
+INFO:tensorflow:Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-only/model.ckpt-150000
+INFO - tensorflow - Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-only/model.ckpt-150000
+2017-12-14 10:38:13.812850: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.001480: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.089458: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.089482: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.095699: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/weights/Adam not found in checkpoint
+2017-12-14 10:38:14.170052: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.208719: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.248669: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.577395: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/weights/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.579883: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b2/BatchNorm/beta/Adam not found in checkpoint
+2017-12-14 10:38:14.580214: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.580570: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.581483: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam not found in checkpoint
+2017-12-14 10:38:14.581943: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b2/BatchNorm/gamma/Adam not found in checkpoint
+2017-12-14 10:38:14.650518: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.655937: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b2/BatchNorm/gamma/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.656752: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.689558: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b2/weights/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.703851: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b2/BatchNorm/beta/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.748325: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv1/BatchNorm/beta/Adam not found in checkpoint
+2017-12-14 10:38:14.757907: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b2/weights/Adam not found in checkpoint
+2017-12-14 10:38:14.765889: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv1/BatchNorm/gamma/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.766167: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.816202: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv2/b1/weights/Adam not found in checkpoint
+2017-12-14 10:38:14.817332: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv1/weights/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.824443: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/beta/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.825216: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv1/BatchNorm/beta/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.857142: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv1/weights/Adam not found in checkpoint
+2017-12-14 10:38:14.863784: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv1/BatchNorm/gamma/Adam not found in checkpoint
+2017-12-14 10:38:14.864569: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv2/b1/BatchNorm/beta/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.872124: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv2/b1/BatchNorm/gamma/Adam not found in checkpoint
+2017-12-14 10:38:14.876086: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv4/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+	 [[Node: save_1/RestoreV2_27 = RestoreV2[dtypes=[DT_FLOAT], _device="/job:localhost/replica:0/task:0/cpu:0"](_recv_save_1/Const_0, save_1/RestoreV2_27/tensor_names, save_1/RestoreV2_27/shape_and_slices)]]
+2017-12-14 10:38:14.923750: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv2/b2/BatchNorm/beta/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.952652: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv2/b2/weights/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.953210: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv2/b1/BatchNorm/gamma/Adam_1 not found in checkpoint
+2017-12-14 10:38:14.954307: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv2/b2/BatchNorm/beta/Adam not found in checkpoint
+2017-12-14 10:38:15.033873: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv2/b1/weights/Adam_1 not found in checkpoint
+2017-12-14 10:38:15.167232: W tensorflow/core/framework/op_kernel.cc:1152] Not found: Key OptimizeLoss/siamese_fc/conv2/b2/BatchNorm/gamma/Adam not found in checkpoint

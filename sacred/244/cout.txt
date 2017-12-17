@@ -1,0 +1,43 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "244"
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+INFO - root - Model moving average is disabled since decay factor is 0
+111111111 Tensor("siamese_fc/conv5/concat:0", shape=(8, 6, 6, 256), dtype=float32) Tensor("siamese_fc/conv4/concat:0", shape=(8, 8, 8, 384), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 384, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/db1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 18, 6, 6), dtype=float32)
+111111111 Tensor("siamese_fc_1/conv5/concat:0", shape=(8, 20, 20, 256), dtype=float32) Tensor("siamese_fc_1/conv4/concat:0", shape=(8, 22, 22, 384), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 384, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/db1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 18, 20, 20), dtype=float32)
+Tensor("detection/add:0", shape=(8, 15, 15), dtype=float32)
+2017-12-12 08:29:19.417306: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-12 08:29:19.417338: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-12 08:29:19.417345: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-12 08:29:19.417349: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-12 08:29:19.417353: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-12 08:29:19.760529: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 5791:00:00.0
+Total memory: 11.17GiB
+Free memory: 11.10GiB
+2017-12-12 08:29:19.760569: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-12 08:29:19.760577: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-12 08:29:19.760585: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 5791:00:00.0)
+INFO:tensorflow:Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-SGD-lr0.1-decay7000-nosplit-clip50-shortcut1/model.ckpt-40000
+INFO - tensorflow - Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-SGD-lr0.1-decay7000-nosplit-clip50-shortcut1/model.ckpt-40000
+INFO - root - Starting threads 0 ...
+
+INFO - root - training for 332500 steps
+INFO - root - 2017-12-12 08:29:22.825977: step 0, loss = 0.62, batch loss = 0.57 (3.5 examples/sec; 2.302 sec/batch; 212h:38m:14s remains)
+2017-12-12 08:29:23.206243: I tensorflow/core/kernels/logging_ops.cc:79] [[[-2.6349895 -2.6078997 -2.7607474 -3.0168347 -3.2232568 -3.2056298 -2.8151383 -2.1338027 -1.5417492 -1.4892013 -1.9765893 -2.6444249 -3.1557093 -3.4111259 -3.4533036][-2.570385 -2.5287464 -2.6831799 -2.9434519 -3.0949428 -2.9337912 -2.3209491 -1.3516557 -0.55935216 -0.54743314 -1.2413142 -2.1272817 -2.7714512 -3.093483 -3.2334912][-2.441925 -2.4081283 -2.5849485 -2.8054361 -2.7850275 -2.3224595 -1.3448918 -0.045372725 0.83095407 0.61378813 -0.41208935 -1.5625532 -2.3502145 -2.7205753 -2.9394376][-2.2249012 -2.2214217 -2.4210122 -2.5259416 -2.1997309 -1.292273 0.15991879 1.7779741 2.5702362 1.9397058 0.48270512 -0.9733119 -1.9365495 -2.3781214 -2.6668522][-1.9065313 -1.9429934 -2.1491756 -2.0833793 -1.3670952 0.074159145 2.0642605 3.9534287 4.5012279 3.3415051 1.4030099 -0.38961411 -1.5612211 -2.116976 -2.4786587][-1.566824 -1.6606622 -1.8605905 -1.6127429 -0.50144458 1.4764223 3.9674454 5.9651351 6.0500989 4.260757 1.8539906 -0.18649673 -1.4498942 -2.0512118 -2.434731][-1.3889866 -1.5444591 -1.6986151 -1.2377386 0.23104191 2.6136408 5.3482842 7.11295 6.5230908 4.1409411 1.4593973 -0.563385 -1.6726198 -2.1796513 -2.5168102][-1.5074375 -1.6702132 -1.7136943 -1.0370944 0.64689684 3.1018085 5.601604 6.7442021 5.4901948 2.8458929 0.29253006 -1.3757427 -2.1194212 -2.4245594 -2.6656961][-1.7547593 -1.8479629 -1.7558553 -0.95546746 0.70996714 2.8796844 4.7536635 5.106298 3.4418669 0.95505476 -1.1159616 -2.2384672 -2.5838804 -2.6932428 -2.8421502][-1.9450237 -1.8965361 -1.672317 -0.87140751 0.55269527 2.208591 3.3260217 3.0040431 1.2591648 -0.77738118 -2.2155337 -2.8055203 -2.8804102 -2.9033661 -3.01932][-2.1308591 -1.9644421 -1.6571329 -0.960583 0.092088223 1.1787715 1.658514 0.98226452 -0.51590037 -1.9578581 -2.8051987 -3.0197787 -3.0014071 -3.0476918 -3.18601][-2.3524928 -2.1860266 -1.8928905 -1.3549409 -0.68715072 -0.10663462 -0.035470247 -0.70785952 -1.7097912 -2.5369487 -2.950711 -2.9898179 -3.0073941 -3.1320448 -3.3127851][-2.5802488 -2.4903855 -2.2682037 -1.8930387 -1.558532 -1.3829396 -1.5217805 -1.9741036 -2.4065423 -2.6982524 -2.8420131 -2.8540616 -2.9655385 -3.1668959 -3.3787322][-2.7025828 -2.7216558 -2.6219692 -2.4414566 -2.4077971 -2.5123844 -2.662015 -2.7614937 -2.6437681 -2.5118 -2.5234675 -2.6241083 -2.8815513 -3.1615772 -3.38697][-2.7049818 -2.8154602 -2.8622403 -2.8922877 -3.0875466 -3.2790551 -3.2192109 -2.8822446 -2.3193908 -1.9512314 -2.0111592 -2.3261445 -2.7717943 -3.1189179 -3.3367827]]...]
+INFO:tensorflow:/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFCtest/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - tensorflow - /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFCtest/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - root - 2017-12-12 08:29:25.713018: step 10, loss = 0.51, batch loss = 0.45 (37.7 examples/sec; 0.212 sec/batch; 19h:36m:32s remains)
+INFO - root - 2017-12-12 08:29:27.897411: step 20, loss = 0.42, batch loss = 0.36 (37.4 examples/sec; 0.214 sec/batch; 19h:46m:33s remains)
+/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFCtest
+INFO - root - 2017-12-12 08:29:30.078627: step 30, loss = 0.38, batch loss = 0.32 (36.9 examples/sec; 0.217 sec/batch; 20h:02m:30s remains)
+INFO - root - 2017-12-12 08:29:32.242244: step 40, loss = 0.43, batch loss = 0.37 (37.3 examples/sec; 0.214 sec/batch; 19h:47m:48s remains)
+INFO - root - 2017-12-12 08:29:34.414174: step 50, loss = 0.42, batch loss = 0.36 (37.8 examples/sec; 0.212 sec/batch; 19h:32m:12s remains)
+INFO - root - 2017-12-12 08:29:36.648788: step 60, loss = 0.71, batch loss = 0.65 (36.6 examples/sec; 0.218 sec/batch; 20h:10m:09s remains)
+INFO - root - 2017-12-12 08:29:38.853279: step 70, loss = 0.30, batch loss = 0.24 (36.8 examples/sec; 0.217 sec/batch; 20h:02m:53s remains)

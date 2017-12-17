@@ -1,0 +1,91 @@
+INFO - run_tracker_on_OTB - Running command 'main'
+INFO - run_tracker_on_OTB - Started run with ID "9"
+Setup sequences ...
+	BasketBall	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/BasketBall/img/
+	Bolt	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Bolt/img/
+	Boy	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Boy/img/
+	Car4	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Car4/img/
+	CarDark	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/CarDark/img/
+	CarScale	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/CarScale/img/
+	Coke	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Coke/img/
+	Couple	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Couple/img/
+	Crossing	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Crossing/img/
+	David	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/David/img/
+	David2	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/David2/img/
+	David3	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/David3/img/
+	Deer	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Deer/img/
+	Dog1	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Dog1/img/
+	Doll	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Doll/img/
+	Dudek	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Dudek/img/
+	FaceOcc1	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/FaceOcc1/img/
+	FaceOcc2	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/FaceOcc2/img/
+	Fish	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Fish/img/
+	FleetFace	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/FleetFace/img/
+	Football	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Football/img/
+	Football1	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Football1/img/
+	Freeman1	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Freeman1/img/
+	Freeman3	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Freeman3/img/
+	Freeman4	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Freeman4/img/
+	Girl	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Girl/img/
+	Ironman	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Ironman/img/
+	Jogging-1	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Jogging-1/img/
+	Jogging-2	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Jogging-2/img/
+	Jumping	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Jumping/img/
+	Lemming	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Lemming/img/
+	Liquor	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Liquor/img/
+	Matrix	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Matrix/img/
+	Mhyang	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Mhyang/img/
+	MotorRolling	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/MotorRolling/img/
+	MountainBike	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/MountainBike/img/
+	Shaking	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Shaking/img/
+	Singer1	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Singer1/img/
+	Singer2	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Singer2/img/
+	Skating1	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Skating1/img/
+	Skiing	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Skiing/img/
+	Soccer	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Soccer/img/
+	Subway	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Subway/img/
+	Suv	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Suv/img/
+	Sylvester	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Sylvester/img/
+	Tiger1	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Tiger1/img/
+	Tiger2	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Tiger2/img/
+	Trellis	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Trellis/img/
+	Walking	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Walking/img/
+	Walking2	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Walking2/img/
+	Woman	/home/v-chaoqw/MYSFC-ORI/OTB-py-master/data/Woman/img/
+INFO - root - Building model.
+('batch', 3)
+WARNING - root - init_method is not explicitly specified, using default value: None
+inputs Tensor("get_exemplar_image/map/TensorArrayStack/TensorArrayGatherV3:0", shape=(3, 127, 127, 3), dtype=float32)
+conv1 Tensor("siamese_fc/pool1/MaxPool:0", shape=(3, 29, 29, 96), dtype=float32)
+net Tensor("siamese_fc/conv4/concat:0", shape=(3, 8, 8, 384), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(3, 384, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(3, 18, 8, 8), dtype=float32)
+WARNING - root - init_method is not explicitly specified, using default value: None
+inputs Tensor("add_5:0", shape=(3, 255, 255, 3), dtype=float32)
+conv1 Tensor("siamese_fc_1/pool1/MaxPool:0", shape=(3, 61, 61, 96), dtype=float32)
+net Tensor("siamese_fc_1/conv4/concat:0", shape=(3, 24, 24, 384), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(3, 384, 24, 24), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(3, 18, 24, 24), dtype=float32)
+awjksfehawkjfh Tensor("siamese_fc_1/conv5/def/b1/transpose:0", shape=(3, 22, 22, 256), dtype=float32) <tf.Variable 'target_template/State/exemplar:0' shape=(3, 6, 6, 256) dtype=float32_ref>
+INFO - root - Upsample method -- bicubic
+INFO - root - Upsample response align cornor -- True
+INFO - root - Upsampling size -- 272
+2017-12-17 05:09:13.904646: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-17 05:09:13.904676: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-17 05:09:13.904682: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-17 05:09:13.904687: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-17 05:09:13.904691: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-17 05:09:19.040205: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 5791:00:00.0
+Total memory: 11.17GiB
+Free memory: 6.62GiB
+2017-12-17 05:09:19.040239: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-17 05:09:19.040246: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-17 05:09:19.040253: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 5791:00:00.0)
+INFO - root - Loading model from checkpoint: /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-clip-10-10-test1/model.ckpt-27500
+INFO:tensorflow:Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-clip-10-10-test1/model.ckpt-27500
+INFO - tensorflow - Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-clip-10-10-test1/model.ckpt-27500
+INFO - root - Successfully loaded checkpoint: model.ckpt-27500
+INFO - root - track num scales -- 3
+INFO - root - Creating training directory: /home/v-chaoqw/MYSFC-ORI/tracker_benchmark/trackers/SFC-clip-10-10-test111111
+INFO - root - Processing BasketBall_0...

@@ -1,0 +1,81 @@
+{
+  "artifacts": [], 
+  "command": "main", 
+  "experiment": {
+    "base_dir": "/home/v-chaoqw/MYSFC-ORI/benchmarks", 
+    "dependencies": [
+      "numpy==1.12.1", 
+      "sacred==0.7.2", 
+      "tensorflow-gpu==1.1.0"
+    ], 
+    "mainfile": "run_tracker_on_OTB.py", 
+    "name": "run_tracker_on_OTB", 
+    "repositories": [], 
+    "sources": [
+      [
+        "run_tracker_on_OTB.py", 
+        "_sources/run_tracker_on_OTB_f7074d28961cf181f240530e08d668a2.py"
+      ]
+    ]
+  }, 
+  "heartbeat": "2017-12-17T05:19:20.538898", 
+  "host": {
+    "ENV": {}, 
+    "cpu": "Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz", 
+    "gpus": {
+      "driver_version": "384.81", 
+      "gpus": [
+        {
+          "model": "Tesla K80", 
+          "persistence_mode": false, 
+          "total_memory": 11439
+        }, 
+        {
+          "model": "Tesla K80", 
+          "persistence_mode": false, 
+          "total_memory": 11439
+        }
+      ]
+    }, 
+    "hostname": "GCRAZGDL116", 
+    "os": [
+      "Linux", 
+      "Linux-4.4.0-101-generic-x86_64-with-debian-stretch-sid"
+    ], 
+    "python_version": "2.7.14"
+  }, 
+  "meta": {
+    "command": "main", 
+    "options": {
+      "--beat_interval": null, 
+      "--capture": null, 
+      "--comment": null, 
+      "--debug": false, 
+      "--enforce_clean": false, 
+      "--file_storage": null, 
+      "--force": false, 
+      "--help": false, 
+      "--loglevel": null, 
+      "--mongo_db": null, 
+      "--name": null, 
+      "--pdb": false, 
+      "--print_config": false, 
+      "--priority": null, 
+      "--queue": false, 
+      "--sql": null, 
+      "--tiny_db": null, 
+      "--unobserved": false, 
+      "COMMAND": null, 
+      "UPDATE": [
+        "workstation"
+      ], 
+      "help": false, 
+      "with": true
+    }
+  }, 
+  "resources": [], 
+  "result": 0.057009797659340423, 
+  "start_time": "2017-12-17T04:54:40.301961", 
+  "status": "COMPLETED", 
+  "stop_time": "2017-12-17T05:19:20.537832"
+}

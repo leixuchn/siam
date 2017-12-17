@@ -1,0 +1,87 @@
+{
+  "artifacts": [], 
+  "command": "main", 
+  "experiment": {
+    "base_dir": "/home/v-chaoqw/MYSFC-ORI", 
+    "dependencies": [
+      "numpy==1.12.1", 
+      "sacred==0.7.2"
+    ], 
+    "mainfile": "configuration.py", 
+    "name": "Siam-FC", 
+    "repositories": [], 
+    "sources": [
+      [
+        "configuration.py", 
+        "_sources/configuration_74cf4554f642c12fb93a3068e5e0db00.py"
+      ]
+    ]
+  }, 
+  "fail_trace": [
+    "Traceback (most recent call last):\n", 
+    "  File \"/home/v-chaoqw/anaconda2/envs/hdrnet/lib/python2.7/site-packages/sacred/config/captured_function.py\", line 48, in captured_function\n    result = wrapped(*args, **kwargs)\n", 
+    "  File \"train_track_model.py\", line 192, in main\n    opt_op0=tf.train.GradientDescentOptimizer(learning_rate).minimize(model.total_loss,global_step=model.global_step,var_list=var_0)\n", 
+    "UnboundLocalError: local variable 'learning_rate' referenced before assignment\n"
+  ], 
+  "heartbeat": "2017-12-10T04:04:32.758279", 
+  "host": {
+    "ENV": {}, 
+    "cpu": "Intel(R) Xeon(R) CPU E5-2690 v3 @ 2.60GHz", 
+    "gpus": {
+      "driver_version": "384.81", 
+      "gpus": [
+        {
+          "model": "Tesla K80", 
+          "persistence_mode": false, 
+          "total_memory": 11439
+        }, 
+        {
+          "model": "Tesla K80", 
+          "persistence_mode": false, 
+          "total_memory": 11439
+        }
+      ]
+    }, 
+    "hostname": "GCRAZGDL116", 
+    "os": [
+      "Linux", 
+      "Linux-4.4.0-101-generic-x86_64-with-debian-stretch-sid"
+    ], 
+    "python_version": "2.7.14"
+  }, 
+  "meta": {
+    "command": "main", 
+    "options": {
+      "--beat_interval": null, 
+      "--capture": null, 
+      "--comment": null, 
+      "--debug": false, 
+      "--enforce_clean": false, 
+      "--file_storage": null, 
+      "--force": false, 
+      "--help": false, 
+      "--loglevel": null, 
+      "--mongo_db": null, 
+      "--name": null, 
+      "--pdb": false, 
+      "--print_config": false, 
+      "--priority": null, 
+      "--queue": false, 
+      "--sql": null, 
+      "--tiny_db": null, 
+      "--unobserved": false, 
+      "COMMAND": null, 
+      "UPDATE": [
+        "sfc", 
+        "workstation"
+      ], 
+      "help": false, 
+      "with": true
+    }
+  }, 
+  "resources": [], 
+  "result": null, 
+  "start_time": "2017-12-10T04:04:23.001292", 
+  "status": "FAILED", 
+  "stop_time": "2017-12-10T04:04:32.759433"
+}

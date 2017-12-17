@@ -1,0 +1,45 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "203"
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+sdiufhasudf Tensor("siamese_fc/conv5/split:0", shape=(8, 8, 8, 192), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 72, 8, 8), dtype=float32)
+ddd Tensor("siamese_fc/conv5/def/b1/transpose:0", shape=(8, 6, 6, 128), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose_2:0", shape=(8, 192, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_3:0", shape=(8, 72, 8, 8), dtype=float32)
+sdiufhasudf Tensor("siamese_fc_1/conv5/split:0", shape=(8, 22, 22, 192), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 72, 22, 22), dtype=float32)
+ddd Tensor("siamese_fc_1/conv5/def/b1/transpose:0", shape=(8, 20, 20, 128), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose_2:0", shape=(8, 192, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_3:0", shape=(8, 72, 22, 22), dtype=float32)
+Tensor("detection/add:0", shape=(8, 15, 15), dtype=float32)
+INFO - root - Model moving average is disabled since decay factor is 0
+2017-12-11 02:54:51.921224: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-11 02:54:51.921264: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-11 02:54:51.921270: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-11 02:54:51.921274: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-11 02:54:51.921278: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-11 02:54:52.430819: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 5791:00:00.0
+Total memory: 11.17GiB
+Free memory: 8.74GiB
+2017-12-11 02:54:52.430856: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-11 02:54:52.430863: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-11 02:54:52.430871: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 5791:00:00.0)
+INFO:tensorflow:Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-momentum-lr0.001-clip50-initconv1-4-fixqian/model.ckpt-30000
+INFO - tensorflow - Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-momentum-lr0.001-clip50-initconv1-4-fixqian/model.ckpt-30000
+INFO - root - Starting threads 0 ...
+
+INFO - root - training for 332500 steps
+aiaiaiaiaiaiaiiaaiia [<tf.Variable 'siamese_fc/conv5/def/offset1/weights:0' shape=(3, 3, 192, 72) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv5/def/offset2/weights:0' shape=(3, 3, 192, 72) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref>, <tf.Variable 'siamese_fc/conv5/def/b2/weights:0' shape=(128, 192, 3, 3) dtype=float32_ref>]
+INFO - root - 2017-12-11 02:55:00.093174: step 0, loss = 0.70, batch loss = 0.64 (1.5 examples/sec; 5.322 sec/batch; 491h:32m:19s remains)
+2017-12-11 02:55:00.861361: I tensorflow/core/kernels/logging_ops.cc:79] [[[-0.07466878 -0.076964684 -0.075858526 -0.068703242 -0.053665865 -0.031854592 -0.0076744081 0.012149991 0.019380847 0.0073425993 -0.021845059 -0.059126422 -0.0915433 -0.11080363 -0.11582791][-0.073645137 -0.072893195 -0.06518627 -0.0465452 -0.015994202 0.022467721 0.060609672 0.088438272 0.094940506 0.0710811 0.020627055 -0.040340275 -0.089965172 -0.11731853 -0.12451182][-0.062169574 -0.055641491 -0.037051514 -0.00065811875 0.053914059 0.11944203 0.18137117 0.22321875 0.2296178 0.18874452 0.10665334 0.0089547355 -0.069236659 -0.11183243 -0.12508518][-0.037251871 -0.022464955 0.010780228 0.070668869 0.15779541 0.26135871 0.35682803 0.41701087 0.42035836 0.35418844 0.2292054 0.083613634 -0.032113276 -0.096062489 -0.11918916][0.00091230776 0.025763627 0.075633764 0.1617718 0.28548452 0.43182337 0.56275278 0.6368525 0.62666571 0.52359253 0.34874079 0.15473416 0.0038593409 -0.0795235 -0.11193936][0.050178852 0.086086839 0.15332155 0.26509717 0.4225052 0.60533452 0.76068175 0.83283275 0.79277837 0.64385128 0.42298394 0.19441131 0.022852739 -0.070653796 -0.10776167][0.10644925 0.15475667 0.23930214 0.3721908 0.55157036 0.7505613 0.90478706 0.95132136 0.86830324 0.67722136 0.42980307 0.19242297 0.021141298 -0.070644625 -0.1072607][0.16493179 0.22558638 0.32428005 0.46766654 0.64750242 0.83058876 0.95008391 0.94978178 0.82316118 0.60926837 0.36555624 0.1484139 -0.0027019044 -0.0822804 -0.11353257][0.21620905 0.2847867 0.38823298 0.52521807 0.67953008 0.814857 0.87409204 0.82085866 0.66671896 0.46002823 0.25136879 0.077757359 -0.04009971 -0.10151348 -0.12457252][0.25090259 0.31977016 0.41520205 0.52843374 0.63789958 0.71024394 0.70692587 0.61553735 0.46104774 0.28926662 0.13423485 0.011017731 -0.073718354 -0.11920231 -0.13569848][0.25985405 0.32128721 0.39836037 0.47839883 0.5399341 0.5582335 0.51451933 0.41456467 0.28667092 0.16444135 0.062054887 -0.022361772 -0.087151051 -0.12632929 -0.14167634][0.23698811 0.283829 0.3370721 0.3843967 0.40979946 0.39868814 0.34651095 0.26672432 0.18162192 0.10758241 0.042244837 -0.023294054 -0.083789632 -0.12548357 -0.14368437][0.18879478 0.2165764 0.24477156 0.26524305 0.26999465 0.25330484 0.21792743 0.17541888 0.13613196 0.099207863 0.053083271 -0.0091823507 -0.074846283 -0.12301629 -0.14531747][0.1384839 0.14814983 0.15400067 0.15452428 0.15015793 0.14201899 0.13483505 0.13261198 0.1324731 0.11972289 0.080200151 0.012994586 -0.061564323 -0.11736646 -0.1442149][0.10913827 0.10669062 0.096807018 0.085590288 0.080771886 0.087546058 0.10873422 0.13957112 0.16621019 0.16494016 0.12240429 0.044248667 -0.042788398 -0.10824664 -0.1408239]]...]
+INFO:tensorflow:/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-SGD-lr0.00001-clip50-initfromfixqian30k-fixqian/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+INFO - tensorflow - /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-SGD-lr0.00001-clip50-initfromfixqian30k-fixqian/model.ckpt-0 is not in all_model_checkpoint_paths. Manually adding it.
+/home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-SGD-lr0.00001-clip50-initfromfixqian30k-fixqian
+INFO - root - 2017-12-11 02:55:06.573440: step 10, loss = 0.68, batch loss = 0.62 (15.8 examples/sec; 0.505 sec/batch; 46h:38m:32s remains)
+INFO - root - 2017-12-11 02:55:11.087658: step 20, loss = 0.68, batch loss = 0.62 (15.7 examples/sec; 0.509 sec/batch; 47h:00m:35s remains)
+INFO - root - 2017-12-11 02:55:16.149256: step 30, loss = 0.70, batch loss = 0.64 (15.6 examples/sec; 0.514 sec/batch; 47h:28m:05s remains)
+INFO - root - 2017-12-11 02:55:21.252379: step 40, loss = 0.71, batch loss = 0.65 (15.2 examples/sec; 0.526 sec/batch; 48h:34m:00s remains)

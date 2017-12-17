@@ -1,0 +1,49 @@
+INFO - Siam-FC - Running command 'main'
+INFO - Siam-FC - Started run with ID "276"
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+INFO - root - preproces -- siamese_fc_color
+WARNING - root - root is not explicitly specified, using default value: None
+INFO - root - For training, we use instance size 255 - 2 * 8 ...
+WARNING - root - init_method is not explicitly specified, using default value: None
+inputs Tensor("batch:0", shape=(8, 127, 127, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc/pool1/MaxPool:0", shape=(8, 29, 29, 96), dtype=float32)
+net Tensor("siamese_fc/conv4/concat:0", shape=(8, 8, 8, 384), dtype=float32)
+Tensor("siamese_fc/conv5/def/transpose:0", shape=(8, 384, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc/conv5/def/transpose_1:0", shape=(8, 18, 8, 8), dtype=float32)
+inputs Tensor("batch:1", shape=(8, 239, 239, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc_1/pool1/MaxPool:0", shape=(8, 57, 57, 96), dtype=float32)
+net Tensor("siamese_fc_1/conv4/concat:0", shape=(8, 22, 22, 384), dtype=float32)
+Tensor("siamese_fc_1/conv5/def/transpose:0", shape=(8, 384, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_1/conv5/def/transpose_1:0", shape=(8, 18, 22, 22), dtype=float32)
+Tensor("detection/add:0", shape=(8, 15, 15), dtype=float32)
+inputs Tensor("batch_1:0", shape=(8, 127, 127, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc_2/pool1/MaxPool:0", shape=(8, 29, 29, 96), dtype=float32)
+INFO - root - Model moving average is disabled since decay factor is 0
+2017-12-15 08:52:00.395859: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.1 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 08:52:00.396020: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use SSE4.2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 08:52:00.396046: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 08:52:00.396067: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use AVX2 instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 08:52:00.396088: W tensorflow/core/platform/cpu_feature_guard.cc:45] The TensorFlow library wasn't compiled to use FMA instructions, but these are available on your machine and could speed up CPU computations.
+2017-12-15 08:52:01.140991: I tensorflow/core/common_runtime/gpu/gpu_device.cc:887] Found device 0 with properties: 
+name: Tesla K80
+major: 3 minor: 7 memoryClockRate (GHz) 0.8235
+pciBusID 6bee:00:00.0
+Total memory: 11.17GiB
+Free memory: 8.74GiB
+2017-12-15 08:52:01.141027: I tensorflow/core/common_runtime/gpu/gpu_device.cc:908] DMA: 0 
+2017-12-15 08:52:01.141034: I tensorflow/core/common_runtime/gpu/gpu_device.cc:918] 0:   Y 
+2017-12-15 08:52:01.141041: I tensorflow/core/common_runtime/gpu/gpu_device.cc:977] Creating TensorFlow device (/gpu:0) -> (device: 0, name: Tesla K80, pci bus id: 6bee:00:00.0)
+INFO:tensorflow:Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-clip-0.01-0.01/model.ckpt-140000
+INFO - tensorflow - Restoring parameters from /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-clip-0.01-0.01/model.ckpt-140000
+INFO - root - Starting threads 0 ...
+
+INFO - root - training for 332500 steps
+net Tensor("siamese_fc_2/conv4/concat:0", shape=(8, 8, 8, 384), dtype=float32)
+Tensor("siamese_fc_2/conv5/def/transpose:0", shape=(8, 384, 8, 8), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_2/conv5/def/transpose_1:0", shape=(8, 18, 8, 8), dtype=float32)
+inputs Tensor("batch_1:1", shape=(8, 239, 239, 3), dtype=float32, device=/device:CPU:0)
+conv1 Tensor("siamese_fc_3/pool1/MaxPool:0", shape=(8, 57, 57, 96), dtype=float32)
+net Tensor("siamese_fc_3/conv4/concat:0", shape=(8, 22, 22, 384), dtype=float32)
+Tensor("siamese_fc_3/conv5/def/transpose:0", shape=(8, 384, 22, 22), dtype=float32) <tf.Variable 'siamese_fc/conv5/def/b1/weights:0' shape=(256, 384, 3, 3) dtype=float32_ref> Tensor("siamese_fc_3/conv5/def/transpose_1:0", shape=(8, 18, 22, 22), dtype=float32)
+Tensor("detection_1/add:0", shape=(8, 15, 15), dtype=float32)
+INFO - root - 2017-12-15 08:52:09.130656: step 0, loss = 0.18, batch loss = 0.15 (1.4 examples/sec; 5.852 sec/batch; 540h:31m:23s remains)
