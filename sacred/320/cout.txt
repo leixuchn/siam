@@ -1,8 +1,0 @@
-INFO - Siam-FC - Running command 'main'
-INFO - Siam-FC - Started run with ID "320"
-INFO - root - preproces -- siamese_fc_color
-WARNING - root - root is not explicitly specified, using default value: None
-INFO - root - For training, we use instance size 255 - 2 * 8 ...
-WARNING - root - init_method is not explicitly specified, using default value: None
-inputs Tensor("train/batch:0", shape=(8, 127, 127, 3), dtype=float32, device=/device:CPU:0)
-conv1 Tensor("train/siamese_fc/pool1/MaxPool:0", shape=(8, 29, 29, 96), dtype=float32)

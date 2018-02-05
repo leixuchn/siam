@@ -1,5 +1,0 @@
-INFO - Siam-FC - Running command 'main'
-INFO - Siam-FC - Started run with ID "88"
-INFO - root - Creating training directory: /home/v-chaoqw/MYSFC-ORI/track_model_checkpoints/SFC-2-fix
-INFO - root - preproces -- siamese_fc_color
-WARNING - root - root is not explicitly specified, using default value: None

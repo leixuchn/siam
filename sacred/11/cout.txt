@@ -1,2 +1,0 @@
-INFO - Obj-Siam-FC - Running command 'main'
-INFO - Obj-Siam-FC - Started run with ID "11"
